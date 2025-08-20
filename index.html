@@ -2,160 +2,142 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gopika K V | Portfolio</title>
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Gopika K V</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f5f7fa;
+      background: #f4f7fa;
       color: #333;
     }
     header {
-      background: linear-gradient(135deg, #1d3ed3, #302e8b);
+      background: linear-gradient(90deg, #0066cc, #00cc99);
       color: white;
-      padding: 50px 20px;
+      padding: 20px;
       text-align: center;
-      animation: fadeInDown 1.5s ease;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-    nav {
-      background: #333;
-      padding: 12px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      transition: color 0.3s, transform 0.3s;
-    }
-    nav a:hover {
-      color: #4CAF50;
-      transform: scale(1.1);
     }
     section {
+      padding: 30px;
       max-width: 900px;
-      margin: 30px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      opacity: 0;
-      transform: translateY(40px);
-      animation: slideUp 1s ease forwards;
+      margin: auto;
     }
-    section:nth-child(odd) { animation-delay: 0.5s; }
-    section:nth-child(even) { animation-delay: 1s; }
     h2 {
-      color: #4CAF50;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      color: #0066cc;
+      border-bottom: 2px solid #00cc99;
+      display: inline-block;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
     }
     ul li {
-      margin: 8px 0;
+      margin: 10px 0;
+      padding: 10px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .icon {
+      margin-right: 10px;
+      color: #00cc99;
     }
     footer {
-      background: #333;
-      color: white;
       text-align: center;
-      padding: 15px;
+      padding: 20px;
+      background: #0066cc;
+      color: white;
       margin-top: 20px;
-      animation: fadeInUp 1.5s ease;
     }
-    footer p {
-      margin: 0;
+    .resume-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #00cc99;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
     }
-
-    /* Animations */
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-50px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes slideUp {
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
+    .resume-btn:hover {
+      background: #009977;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1> Gopika K V</h1>
-    <p><i class="fas fa-signal"></i> Network Engineer | RF Optimization | Cloud & Data Analytics Enthusiast</p>
+    <h1><i class="fas fa-user-tie"></i> Gopika K V</h1>
+    <p>Network Engineer | RF Optimization | Data Analytics | Cloud Enthusiast</p>
   </header>
 
-  <nav>
-    <a href="#about"><i class="fas fa-user"></i> About</a>
-    <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
-    <a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
-    <a href="#skills"><i class="fas fa-code"></i> Skills</a>
-    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2><i class="fas fa-user-circle"></i> About Me</h2>
-    <p>
-      I am currently working as a <b>Network Engineer at Ericsson</b>, with strong experience in 
-      Telecom SWAP projects, RF Optimization (5G/VoLTE, Nokia), and cloud-related projects. 
-      I hold an <b>M.Tech</b> with project work on Edge Devices. Passionate about 
-      technology, analytics, and optimization.
-    </p>
-  </section>
-
-  <section id="experience">
-    <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+  <section>
+    <h2><i class="fas fa-briefcase icon"></i> Experience</h2>
     <ul>
-      <li><b>Network Engineer – Ericsson</b> (Present)</li>
-      <li>Experience in RF Optimization (Nokia 5G & VoLTE)</li>
-      <li>Worked on optimization projects in telecom industry</li>
-      <li>Hands-on experience with Power BI, Excel, BMC Remedy, GCP, Dialogflow</li>
+      <li><strong>Ericsson</strong> – Network Engineer (Current Role)</li>
+      <li>Telecom SWAP Projects, RF Optimization (5G & VoLTE), and Cluster Acceptance</li>
     </ul>
   </section>
 
-  <section id="projects">
-    <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+  <section>
+    <h2><i class="fas fa-graduation-cap icon"></i> Education</h2>
     <ul>
-      <li><b>Financial Analysis Dashboard (Power BI)</b> – Visualizations: area charts, pie charts, line charts, tree charts, etc.</li>
-      <li><b>Weather Data Monitoring</b> – OpenWeather API + GCP + Grafana + phpMyAdmin</li>
-      <li><b>M.Tech Project</b> – Edge Device-based solution</li>
-      <li><b>Google Data Analytics Capstone</b> – Death age difference analysis (Right vs Left handers)</li>
+      <li><strong>M.Tech Project</strong> – Edge Device Computing</li>
+      <li>Google Data Analytics Certified</li>
     </ul>
   </section>
 
-  <section id="skills">
-    <h2><i class="fas fa-laptop-code"></i> Skills</h2>
-    <p><i class="fas fa-broadcast-tower"></i> <b>Telecom:</b> RF Optimization, Swap, Cluster Acceptance, VoLTE/5G</p>
-    <p><i class="fas fa-cloud"></i> <b>Cloud & Tools:</b> Google Cloud Platform, Grafana, Dialogflow</p>
-    <p><i class="fas fa-chart-bar"></i> <b>Data Analytics:</b> Power BI, Excel, Google Data Analytics Certification</p>
-    <p><i class="fas fa-terminal"></i> <b>Programming:</b> Learning C/C++, familiar with PHP</p>
+  <section>
+    <h2><i class="fas fa-chart-line icon"></i> Projects</h2>
+    <ul>
+      <li>Weather Data Monitoring using OpenWeather API, GCP, Grafana</li>
+      <li>Power BI Dashboard – Financial Analysis</li>
+    </ul>
   </section>
 
-  <section id="contact">
-    <h2><i class="fas fa-address-book"></i> Contact</h2>
-    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:gopikakv@gmail.com">gopikakv@gmail.com</a></p>
-    <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank">https://www.linkedin.com/in/gopika-k-b7105483/</a></p>
-    <!-- <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p> -->
+  <section>
+    <h2><i class="fas fa-book-open icon"></i> Publications</h2>
+    <ul>
+      <li>
+        <i class="fas fa-file-alt icon"></i>
+        <strong>Edge Computing for 5G Networks</strong> – 
+        IEEE Conference on Telecom (2023).  
+        <a href="https://ieeexplore.ieee.org/document/9985728" target="_blank">View on IEEE</a>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><i class="fas fa-cogs icon"></i> Skills</h2>
+    <ul>
+      <li>Telecom: RF Optimization (5G, VoLTE), Cluster Acceptance, SWAP</li>
+      <li>Data: Power BI, Excel, Google Data Analytics</li>
+      <li>Cloud: Google Cloud Platform, Dialogflow</li>
+      <li>Other Tools: Grafana, phpMyAdmin, BMC Remedy</li>
+    </ul>
+  </section>
+
+  <section style="text-align:center;">
+    <a class="resume-btn" href="https://drive.google.com/file/d/18ttJG5RYcTIqqETNmTQFvmtafCb1jAp5/view?usp=sharing" target="_blank">
+      <i class="fas fa-download"></i> Download Resume
+    </a>
   </section>
 
   <footer>
-    <p><i class="fas fa-copyright"></i> 2025 Gopika K V | Portfolio</p>
+    <p>Connect with me: 
+      <a href="https://www.linkedin.com/in/gopika-k-b7105483/" target="_blank" style="color:white; margin-left:10px;">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="gopikakv01@gmail.com" style="color:white; margin-left:10px;">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </p>
   </footer>
 </body>
 </html>
