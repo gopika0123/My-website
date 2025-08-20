@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Gopika K V | Portfolio</title>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,38 +14,60 @@
       color: #333;
     }
     header {
-      background: #4CAF50;
+      background: linear-gradient(135deg, #1d3ed3, #302e8b);
       color: white;
-      padding: 30px;
+      padding: 50px 20px;
       text-align: center;
+      animation: fadeInDown 1.5s ease;
     }
     header h1 {
       margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
     }
     nav {
       background: #333;
-      padding: 10px;
+      padding: 12px;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     nav a {
       color: white;
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
+      transition: color 0.3s, transform 0.3s;
     }
     nav a:hover {
-      text-decoration: underline;
+      color: #4CAF50;
+      transform: scale(1.1);
     }
     section {
       max-width: 900px;
-      margin: 20px auto;
+      margin: 30px auto;
       padding: 20px;
       background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(40px);
+      animation: slideUp 1s ease forwards;
     }
+    section:nth-child(odd) { animation-delay: 0.5s; }
+    section:nth-child(even) { animation-delay: 1s; }
     h2 {
       color: #4CAF50;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    ul li {
+      margin: 8px 0;
     }
     footer {
       background: #333;
@@ -51,37 +75,54 @@
       text-align: center;
       padding: 15px;
       margin-top: 20px;
+      animation: fadeInUp 1.5s ease;
+    }
+    footer p {
+      margin: 0;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Gopika K V</h1>
-    <p>Network Engineer | RF Optimization | Cloud & Data Analytics Enthusiast</p>
+    <h1> Gopika K V</h1>
+    <p><i class="fas fa-signal"></i> Network Engineer | RF Optimization | Cloud & Data Analytics Enthusiast</p>
   </header>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
+    <a href="#about"><i class="fas fa-user"></i> About</a>
+    <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+    <a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
+    <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
   </nav>
 
   <section id="about">
-    <h2>About Me</h2>
+    <h2><i class="fas fa-user-circle"></i> About Me</h2>
     <p>
-      I am currently working as a <b>Network Engineer</b>  with hands-on 
-      experience in Telecom SWAP projects, RF Optimization (5G/VoLTE, Nokia), and cloud-related 
-      projects. I hold an <b>M.Tech</b> with project work on Edge Devices. Passionate about 
+      I am currently working as a <b>Network Engineer at Ericsson</b>, with strong experience in 
+      Telecom SWAP projects, RF Optimization (5G/VoLTE, Nokia), and cloud-related projects. 
+      I hold an <b>M.Tech</b> with project work on Edge Devices. Passionate about 
       technology, analytics, and optimization.
     </p>
   </section>
 
   <section id="experience">
-    <h2>Professional Experience</h2>
+    <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
     <ul>
-      <li>Network Engineer – Telecom Optimization & SWAP Projects </li>
+      <li><b>Network Engineer – Ericsson</b> (Present)</li>
       <li>Experience in RF Optimization (Nokia 5G & VoLTE)</li>
       <li>Worked on optimization projects in telecom industry</li>
       <li>Hands-on experience with Power BI, Excel, BMC Remedy, GCP, Dialogflow</li>
@@ -89,7 +130,7 @@
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
+    <h2><i class="fas fa-project-diagram"></i> Projects</h2>
     <ul>
       <li><b>Financial Analysis Dashboard (Power BI)</b> – Visualizations: area charts, pie charts, line charts, tree charts, etc.</li>
       <li><b>Weather Data Monitoring</b> – OpenWeather API + GCP + Grafana + phpMyAdmin</li>
@@ -99,22 +140,22 @@
   </section>
 
   <section id="skills">
-    <h2>Skills</h2>
-    <p><b>Telecom:</b> RF Optimization, Swap, Cluster Acceptance, VoLTE/5G</p>
-    <p><b>Cloud & Tools:</b> Google Cloud Platform, Grafana, Dialogflow</p>
-    <p><b>Data Analytics:</b> Power BI, Excel, Google Data Analytics Certification</p>
-    <p><b>Programming:</b> Learning C/C++, familiar with PHP</p>
+    <h2><i class="fas fa-laptop-code"></i> Skills</h2>
+    <p><i class="fas fa-broadcast-tower"></i> <b>Telecom:</b> RF Optimization, Swap, Cluster Acceptance, VoLTE/5G</p>
+    <p><i class="fas fa-cloud"></i> <b>Cloud & Tools:</b> Google Cloud Platform, Grafana, Dialogflow</p>
+    <p><i class="fas fa-chart-bar"></i> <b>Data Analytics:</b> Power BI, Excel, Google Data Analytics Certification</p>
+    <p><i class="fas fa-terminal"></i> <b>Programming:</b> Learning C/C++, familiar with PHP</p>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:gopikakv@gmail.com">gopikakv01@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank">https://www.linkedin.com/in/gopika-k-b7105483/</a></p>
+    <h2><i class="fas fa-address-book"></i> Contact</h2>
+    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:gopikakv@gmail.com">gopikakv@gmail.com</a></p>
+    <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank">https://www.linkedin.com/in/gopika-k-b7105483/</a></p>
+    <!-- <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p> -->
   </section>
 
   <footer>
-    <p>© 2025 Gopika K V | Portfolio</p>
+    <p><i class="fas fa-copyright"></i> 2025 Gopika K V | Portfolio</p>
   </footer>
 </body>
 </html>
-
