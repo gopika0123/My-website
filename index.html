@@ -2,43 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gopika's First Website</title>
+  <title>Gopika K V | Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f4f4f9;
       margin: 0;
       padding: 0;
+      background: #f5f7fa;
+      color: #333;
     }
     header {
-      background: #ac4caf;
+      background: #4CAF50;
       color: white;
-      padding: 20px;
+      padding: 30px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
+      max-width: 900px;
+      margin: 20px auto;
       padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #4CAF50;
     }
     footer {
       background: #333;
       color: white;
-      padding: 10px;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to My Website!</h1>
+    <h1>Gopika K V</h1>
+    <p>Network Engineer | RF Optimization | Cloud & Data Analytics Enthusiast</p>
   </header>
-  
-  <section>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
-    <p>Hello! This is my first website. I'm learning web development.</p>
-    <img src="https://via.placeholder.com/300" alt="Sample Image">
+    <p>
+      I am currently working as a <b>Network Engineer</b> (contract basis) with hands-on 
+      experience in Telecom SWAP projects, RF Optimization (5G/VoLTE, Nokia), and cloud-related 
+      projects. I hold an <b>M.Tech</b> with project work on Edge Devices. Passionate about 
+      technology, analytics, and optimization.
+    </p>
   </section>
-  
+
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    <ul>
+      <li>Network Engineer – Telecom Optimization & SWAP Projects (Contract role)</li>
+      <li>Experience in RF Optimization (Nokia 5G & VoLTE)</li>
+      <li>Worked on optimization projects in telecom industry</li>
+      <li>Hands-on experience with Power BI, Excel, BMC Remedy, GCP, Dialogflow</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><b>Financial Analysis Dashboard (Power BI)</b> – Visualizations: area charts, pie charts, line charts, tree charts, etc.</li>
+      <li><b>Weather Data Monitoring</b> – OpenWeather API + GCP + Grafana + phpMyAdmin</li>
+      <li><b>M.Tech Project</b> – Edge Device-based solution</li>
+      <li><b>Google Data Analytics Capstone</b> – Death age difference analysis (Right vs Left handers)</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p><b>Telecom:</b> RF Optimization, Swap, Cluster Acceptance, VoLTE/5G</p>
+    <p><b>Cloud & Tools:</b> Google Cloud Platform, Grafana, Dialogflow</p>
+    <p><b>Data Analytics:</b> Power BI, Excel, Google Data Analytics Certification</p>
+    <p><b>Programming:</b> Learning C/C++, familiar with PHP</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:gopikakv@example.com">gopikakv@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a></p>
+    <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
+  </section>
+
   <footer>
-    <p>© 2025 My Website</p>
+    <p>© 2025 Gopika K V | Portfolio</p>
   </footer>
 </body>
 </html>
